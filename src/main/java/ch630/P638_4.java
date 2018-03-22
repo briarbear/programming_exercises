@@ -14,7 +14,7 @@ public class P638_4 {
         special.add(Arrays.asList(3,0,5));
         special.add(Arrays.asList(1,2,10));
 
-        System.out.println("测试git更新");
+        System.out.println("测试git更新   ");
         List<Integer> needs = new ArrayList<>(Arrays.asList(3,2));
 
 
