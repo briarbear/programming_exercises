@@ -47,6 +47,7 @@ public class P638_4 {
                 res = Math.min(res,temp.get(temp.size()-1) + shopping(price,special,clone,i));
             }
 
+
         }
 
         return res;
