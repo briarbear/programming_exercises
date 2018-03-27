@@ -6,6 +6,3 @@
 .idea
 *.iml
 out
-.gradle
-src/main/resources/
-src/test/
