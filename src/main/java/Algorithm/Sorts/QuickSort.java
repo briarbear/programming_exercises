@@ -1,17 +1,16 @@
 package Algorithm.Sorts;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * 快速排序
  *http://www.cnblogs.com/guoyaohua/p/8600214.html
+ * 参看课本274页
  */
 public class QuickSort {
 
 
-    public void quicksort(int[] array,int low,int high){
+    private void quicksort(int[] array,int low,int high){
 
         if (low<high){
             int pivotLoc = partition(array,low,high);
@@ -22,12 +21,12 @@ public class QuickSort {
 
     /**
      * 交换数组中的元素，并最后返回枢纽元素的位置
-     * @param n
-     * @param low
-     * @param high
-     * @return
+     * @param n 数组
+     * @param low 低位
+     * @param high 高位
+     * @return 返回枢纽位置的最终安置位
      */
-    public int partition(int[] n,int low,int high){
+    private int partition(int[] n,int low,int high){
 
         int temp = n[low];
         while (low<high){
@@ -55,6 +54,7 @@ public class QuickSort {
             System.out.print(x+" ");
         }
         String[] list = {"a","b","c"};
-        Arrays.asList(list).stream().forEach(x -> System.out.println(x));
+        Arrays.stream(list).forEach(System.out::println);
+
     }
 }
