@@ -1,4 +1,4 @@
-package ali;
+package Ali;
 
 public class Test {
 }
