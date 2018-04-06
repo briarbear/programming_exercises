@@ -1,4 +1,4 @@
-package ch630;
+package leetcode.ch630;
 
 import java.util.*;
 

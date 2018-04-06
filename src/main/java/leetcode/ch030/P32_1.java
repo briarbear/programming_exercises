@@ -1,4 +1,4 @@
-package ch030;
+package leetcode.ch030;
 
 import java.util.Stack;
 
