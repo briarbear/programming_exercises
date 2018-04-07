@@ -1,4 +1,4 @@
-package leetcode.ch030;
+package leetcode.ch3;
 
 public class P32_2 {
     /**
