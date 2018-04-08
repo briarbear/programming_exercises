@@ -1,6 +1,4 @@
-package ch1;
-
-import java.util.List;
+package leetcode.others;
 
 public class P19 {
 

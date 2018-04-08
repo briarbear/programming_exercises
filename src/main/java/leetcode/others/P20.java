@@ -1,8 +1,7 @@
-package ch1;
+package leetcode.others;
 
 import java.util.HashMap;
 import java.util.Stack;
-import java.util.Vector;
 
 public class P20 {
 

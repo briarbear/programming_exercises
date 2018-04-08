@@ -1,4 +1,4 @@
-package ch1;
+package leetcode.others;
 
 public class P5_2 {
     private static int lo,maxLen;

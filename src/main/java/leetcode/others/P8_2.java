@@ -1,4 +1,4 @@
-package ch1;
+package leetcode.others;
 
 public class P8_2 {
 

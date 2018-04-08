@@ -1,6 +1,4 @@
-package ch1;
-
-import java.util.Arrays;
+package leetcode.others;
 
 public class P11 {
 
