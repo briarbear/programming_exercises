@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 
 /**
  * 实现Runnable接口
+ * http://blog.51cto.com/983836259/1727023
  */
 public class ScanMethod1 implements Runnable{
 
