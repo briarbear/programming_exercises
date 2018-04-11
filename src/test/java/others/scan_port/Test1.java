@@ -1,5 +1,7 @@
 package others.scan_port;
 
+import java.util.HashMap;
+
 public class Test1 {
     public static void main(String[] args) {
         ScanMethod1 scanMethod1 = new ScanMethod1();
