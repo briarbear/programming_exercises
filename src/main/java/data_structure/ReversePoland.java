@@ -78,18 +78,23 @@ public class ReversePoland {
                     }else {
                         int priority = getPriority(s);
                         String s1 = "";
+                        boolean flag = false;
                         while (!stack.empty()){
+                            flag = false;
                             s1 = stack.pop();
                             if (s1.equals("(")){
-                                stack.push("(");
+//                                stack.push("(");
                                 break;
                             }
 
-                            if (getPriority(s1) >= priority)
+                            if (getPriority(s1) >= priority){
                                 res += " " + s1;
+                                flag = true;
+                            }
                         }
-                        if (!s1.equals("("))
-                            stack.push(s);
+                        if (!s1.equals("") && !flag)
+                            stack.push(s1);
+                        stack.push(s);
                     }
                 }
 
