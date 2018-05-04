@@ -51,4 +51,24 @@ public class S5 {
         return s.substring(start,end+1);
 
     }
+
+    /**
+     * 尝试动态规划解决
+     * @param s
+     * @return
+     */
+    public String longestPalindrome2(String s) {
+
+        char[] chars  = s.toCharArray();
+        int len = chars.length;
+        boolean[][] dp = new boolean[len][len];   //dp[i][j]表示s(i....j)的字串 是否为回文串
+
+        for (int i = len-1;i>=0;i--){
+            for (int j = i; j < len ; j++) {
+
+            }
+        }
+
+
+    }
 }
