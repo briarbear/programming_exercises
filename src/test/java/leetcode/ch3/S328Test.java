@@ -15,7 +15,7 @@ public class S328Test {
         r.next = new ListNode(2);
         r.next.next = new ListNode(3);
         r.next.next.next = new ListNode(4);
-        r.next.next.next.next = new ListNode(5);
+//        r.next.next.next.next = new ListNode(5);
 
         ListNode res = s.oddEvenList(r);
         System.out.println(res);
