@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.data_structure;
 
 /**
  * 二叉树数据结构

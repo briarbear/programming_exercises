@@ -1,9 +1,7 @@
 package leetcode.ch1;
 
-import leetcode.TreeNode;
+import leetcode.data_structure.TreeNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class S103Test {
 

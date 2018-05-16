@@ -1,11 +1,9 @@
 package leetcode.ch9;
 
-import leetcode.TreeNode;
+import leetcode.data_structure.TreeNode;
 import org.junit.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class S94Test {
 

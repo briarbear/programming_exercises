@@ -1,6 +1,6 @@
 package leetcode.ch9;
 
-import leetcode.TreeNode;
+import leetcode.data_structure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

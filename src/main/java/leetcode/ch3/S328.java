@@ -1,6 +1,6 @@
 package leetcode.ch3;
 
-import leetcode.ListNode;
+import leetcode.data_structure.ListNode;
 
 /**
  * odd 奇数 even偶数

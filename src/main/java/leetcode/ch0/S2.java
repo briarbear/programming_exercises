@@ -1,6 +1,6 @@
 package leetcode.ch0;
 
-import leetcode.ListNode;
+import leetcode.data_structure.ListNode;
 
 /**
  * 2 两数相加 	 Add Two Numbers

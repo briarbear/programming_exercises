@@ -1,6 +1,6 @@
 package leetcode.ch0;
 
-import leetcode.ListNode;
+import leetcode.data_structure.ListNode;
 import org.junit.Test;
 
 public class S2Test {

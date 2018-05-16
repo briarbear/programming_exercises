@@ -1,6 +1,6 @@
 package leetcode.ch1;
 
-import leetcode.TreeNode;
+import leetcode.data_structure.TreeNode;
 
 import java.util.*;
 

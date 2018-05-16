@@ -1,6 +1,6 @@
 package leetcode.ch1;
 
-import leetcode.ListNode;
+import leetcode.data_structure.ListNode;
 
 import java.util.HashSet;
 import java.util.Stack;

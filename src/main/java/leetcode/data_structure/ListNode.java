@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.data_structure;
 
 /**
  * 链表 数据结构定义
