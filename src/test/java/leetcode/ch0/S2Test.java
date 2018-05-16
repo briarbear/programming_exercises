@@ -1,8 +1,7 @@
 package leetcode.ch0;
 
+import leetcode.ListNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class S2Test {
 

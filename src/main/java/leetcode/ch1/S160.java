@@ -1,8 +1,9 @@
 package leetcode.ch1;
 
-import leetcode.ch0.ListNode;
+import leetcode.ListNode;
 
 import java.util.HashSet;
+import java.util.Stack;
 
 /**
  * 160. 相交链表
@@ -41,12 +42,71 @@ public class S160 {
     }
 
     /**
-     * 双指针方案，
+     * 双指针方案，拼接链表，利用环的思想
      * @param headA
      * @param headB
      * @return
      */
     public ListNode getIntersectionNode2(ListNode headA, ListNode headB){
-         //待完成
+         //双指针方案，拼接链表，利用环的思想
+         //Dual-pointer scheme, splicing linked lists, using ring ideas
+        if(headA == null || headB == null) return null;
+        ListNode tempA= headA,tempB = headB;
+        int countA = 0,countB = 0;
+
+        while (tempA != tempB){
+
+            if (countA>=2&&countB>=2)
+                return null;
+
+            if (tempA.next == null){
+                tempA = headB;
+                countA++;
+            }else
+                tempA = tempA.next;
+
+            if (tempB.next == null){
+                tempB = headA;
+                countB++;
+            }else
+                tempB = tempB.next;
+
+
+        }
+
+
+
+        return tempA;
     }
+
+
+
+    /**
+     * 栈思路解决方案
+     */
+    public ListNode getIntersectionNode3(ListNode headA, ListNode headB){
+        Stack<ListNode> stackA = new Stack<>();
+        Stack<ListNode> stackB = new Stack<>();
+        ListNode nodeA = headA;
+        ListNode nodeB = headB;
+        if (nodeA==null||nodeB==null)
+            return null;
+        for (;nodeA!=null;stackA.push(nodeA),nodeA = nodeA.next);
+        for (;nodeB!=null;stackB.push(nodeB),nodeB = nodeB.next);
+        ListNode temp = null,res= null;
+        while (!stackA.isEmpty()&&!stackB.isEmpty()){
+            if ((temp = stackA.pop()) == stackB.pop()){
+                res = temp;
+            }else {
+                break;
+            }
+
+
+        }
+        return res;
+    }
+
+
+
+
 }

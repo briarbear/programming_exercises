@@ -1,6 +1,4 @@
-package leetcode.ch0;
-
-import java.util.List;
+package leetcode;
 
 /**
  * 链表 数据结构定义
