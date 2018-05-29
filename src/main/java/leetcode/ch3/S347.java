@@ -15,6 +15,7 @@ public class S347 {
         return res;
     }
 
+
     //链表插入排序，超时
     public List<Integer> handle(int[] nums,int k){
 
@@ -62,7 +63,6 @@ public class S347 {
     }
 
     //堆排序
-
     public List<Integer> sort(int[] nums,int k){
         //扫描一遍数组，存hash表
         Map<Integer,Integer> map = new HashMap<>();
@@ -111,7 +111,6 @@ public class S347 {
         return res;
     }
 
-
     //构建最小堆
     public void buildMinHeap(int[] n,int k,Map<Integer,Integer> map){
         for (int i = (k-1)/2; i >=0; i--) {
@@ -142,11 +141,77 @@ public class S347 {
         return res;
     }
 
-
     //交换数组内两个元素
     private  void swap(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
+
+
+    /**
+     * 使用Java的优先队列数据结构 - PriorityQueue
+     */
+    public List<Integer> topKFrequent2(int[] nums,int k){
+        Map<Integer,Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i]))
+                map.put(nums[i],map.get(nums[i])+1);
+            else
+                map.put(nums[i],1);
+        }
+
+        //建立比较器
+        Comparator<Integer> comparator = (o1, o2) -> map.get(o1) - map.get(o2);
+
+        //使用Java的优先队列
+        Queue<Integer> queue = new PriorityQueue<>(k,comparator);
+
+        //遍历map
+        for (Integer key : map.keySet()) {
+            if (queue.size() < k){
+                queue.add(key);
+            }else {
+                if (map.get(queue.peek()) < map.get(key)){
+                    queue.poll();
+                    queue.add(key);
+                }
+
+            }
+        }
+
+        List<Integer> res = new ArrayList<>(queue);
+        Comparator<Integer> comparator2 = (o1,o2) -> map.get(o2) - map.get(o1);
+        Collections.sort(res,comparator2);
+        return res;
+    }
+
+    /**
+     * Leetcode 范例
+     */
+    public List<Integer> topKFrequent3(int[] nums,int k){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        List<Integer> res = new ArrayList<>();
+        for(int i : nums){
+            map.put(i, map.getOrDefault(i, 0) + 1);  //java8 新语法
+        }
+        List<Integer>[] bucket = new List[nums.length + 1];
+        for(int n : map.keySet()){
+            int freq = map.get(n);
+            if(bucket[freq] == null)
+                bucket[freq] = new LinkedList<>();
+            bucket[freq].add(n);
+        }
+
+        for(int i = bucket.length - 1; i > 0 && k > 0; --i){
+            if(bucket[i] != null){
+                List<Integer> list = bucket[i];
+                res.addAll(list);
+                k -= list.size();
+            }
+        }
+
+        return res;
+    }
+
 }
