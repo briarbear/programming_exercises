@@ -192,10 +192,12 @@ public class S347 {
     public List<Integer> topKFrequent3(int[] nums,int k){
         HashMap<Integer, Integer> map = new HashMap<>();
         List<Integer> res = new ArrayList<>();
+        //存储到map中
         for(int i : nums){
             map.put(i, map.getOrDefault(i, 0) + 1);  //java8 新语法
         }
         List<Integer>[] bucket = new List[nums.length + 1];
+        //关键处，以出现的次数频率为下标，保存List数值
         for(int n : map.keySet()){
             int freq = map.get(n);
             if(bucket[freq] == null)
