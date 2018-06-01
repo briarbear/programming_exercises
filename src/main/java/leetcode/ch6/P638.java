@@ -44,6 +44,7 @@ public class P638 {
      * @param b 价格列表
      * @return 总价格
      */
+
     public int dot(List<Integer> a,List<Integer> b){
         int sum = 0;
 
