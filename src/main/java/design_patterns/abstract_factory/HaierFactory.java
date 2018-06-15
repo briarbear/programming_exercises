@@ -1,6 +1,6 @@
 package design_patterns.abstract_factory;
 
-public class HaierFactory implements IFactory
+public class HaierFactory implements Factory
 {
     public Television produceTelevision()
     {

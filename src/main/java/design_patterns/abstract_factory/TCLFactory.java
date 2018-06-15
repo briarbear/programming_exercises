@@ -1,6 +1,6 @@
 package design_patterns.abstract_factory;
 
-public class TCLFactory implements IFactory
+public class TCLFactory implements Factory
 {
     public Television produceTelevision()
     {

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>design_patterns.abstract_factory</OriginalElement>
+  <nodes>
+    <node x="179.0" y="124.0">design_patterns.abstract_factory.HaierFactory</node>
+    <node x="-138.0" y="124.0">design_patterns.abstract_factory.TCLFactory</node>
+    <node x="433.0" y="340.0">design_patterns.abstract_factory.TCLTelevision</node>
+    <node x="0.0" y="649.0">design_patterns.abstract_factory.ResourceUtils</node>
+    <node x="356.75" y="237.0">design_patterns.abstract_factory.Television</node>
+    <node x="-18.0" y="339.0">design_patterns.abstract_factory.TCLAirConditioner</node>
+    <node x="31.0" y="435.0">design_patterns.abstract_factory.Client</node>
+    <node x="-260.0" y="339.0">design_patterns.abstract_factory.HairAirConditioner</node>
+    <node x="277.0" y="340.0">design_patterns.abstract_factory.HaierTelevision</node>
+    <node x="20.5" y="-2.0">design_patterns.abstract_factory.Factory</node>
+    <node x="-139.0" y="236.0">design_patterns.abstract_factory.AirConditioner</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="design_patterns.abstract_factory.HairAirConditioner" target="design_patterns.abstract_factory.AirConditioner">
+      <point x="0.0" y="-26.5" />
+      <point x="-149.0" y="314.0" />
+      <point x="-83.5" y="314.0" />
+      <point x="-55.5" y="26.5" />
+    </edge>
+    <edge source="design_patterns.abstract_factory.HaierFactory" target="design_patterns.abstract_factory.Factory">
+      <point x="0.0" y="-38.0" />
+      <point x="327.5" y="99.0" />
+      <point x="243.25" y="99.0" />
+      <point x="74.25" y="38.0" />
+    </edge>
+    <edge source="design_patterns.abstract_factory.HaierTelevision" target="design_patterns.abstract_factory.Television">
+      <point x="0.0" y="-26.5" />
+      <point x="345.0" y="315.0" />
+      <point x="389.0" y="315.0" />
+      <point x="-32.25" y="26.5" />
+    </edge>
+    <edge source="design_patterns.abstract_factory.TCLAirConditioner" target="design_patterns.abstract_factory.AirConditioner">
+      <point x="0.0" y="-26.5" />
+      <point x="93.0" y="314.0" />
+      <point x="27.5" y="314.0" />
+      <point x="55.5" y="26.5" />
+    </edge>
+    <edge source="design_patterns.abstract_factory.TCLFactory" target="design_patterns.abstract_factory.Factory">
+      <point x="0.0" y="-38.0" />
+      <point x="10.5" y="99.0" />
+      <point x="94.75" y="99.0" />
+      <point x="-74.25" y="38.0" />
+    </edge>
+    <edge source="design_patterns.abstract_factory.TCLTelevision" target="design_patterns.abstract_factory.Television">
+      <point x="0.0" y="-26.5" />
+      <point x="497.5" y="315.0" />
+      <point x="453.5" y="315.0" />
+      <point x="32.25" y="26.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="122.0" y="248.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
