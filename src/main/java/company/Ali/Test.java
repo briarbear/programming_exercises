@@ -1,4 +1,4 @@
-package Ali;
+package company.Ali;
 
 public class Test {
 }
