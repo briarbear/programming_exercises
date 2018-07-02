@@ -15,3 +15,7 @@
 - 二进制中1的个数[NumberOf1](NumberOf1.java)
 - 数值的整数次方: [Power](Power.java)
 - 调整数组顺序，使奇数位于偶数前面:[ReOrderArray](ReOrderArray.java)
+- 链表中倒数第k个节点：[FindKthToTail](FindKthToTail.java)
+- 反转链表:[ReverseList](ReverseList.java)
+- 合并两个排序的链表[Merge](Merge.java)
+- 树的子结构[HasSubtree](HasSubtree.java)
