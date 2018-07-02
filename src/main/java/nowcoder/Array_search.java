@@ -1,4 +1,4 @@
-package Nowcoder.sword_finger_offer;
+package nowcoder;
 
 /**
  * 二维数组中的查找
