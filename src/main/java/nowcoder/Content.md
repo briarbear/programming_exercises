@@ -13,4 +13,5 @@
 - 跳台阶2:[JumpSFloor2](JumpFloor2.java)
 - 矩形覆盖:[RectCover](RectCover.java)
 - 二进制中1的个数[NumberOf1](NumberOf1.java)
-- 数值的整数次方: []()
+- 数值的整数次方: [Power](Power.java)
+- 调整数组顺序，使奇数位于偶数前面:[ReOrderArray](ReOrderArray.java)
