@@ -19,3 +19,7 @@
 - 反转链表:[ReverseList](ReverseList.java)
 - 合并两个排序的链表[Merge](Merge.java)
 - 树的子结构[HasSubtree](HasSubtree.java)
+- 二叉树的镜像[Mirror](Mirror.java)
+- 顺时针打印矩阵[printMatrix](PrintMatrix.java)
+- 包含main函数的栈[MinStack](MinStack.java)
+- 栈的压入、弹出序列[IsPopOrder](IsPopOrder.java)
