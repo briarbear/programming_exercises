@@ -24,3 +24,4 @@
 - 包含main函数的栈[MinStack](MinStack.java)
 - 栈的压入、弹出序列[IsPopOrder](IsPopOrder.java)
 - 从上往下打印二叉树[PrintFromTopToBottom](PrintFromTopToBottom.java)
+- 二叉搜索树的后序遍历序列[VerifySquenceOfBST](VerifySquenceOfBST.java)
