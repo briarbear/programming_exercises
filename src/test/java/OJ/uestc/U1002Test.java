@@ -1,9 +1,7 @@
 package OJ.uestc;
 
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import others.uestc.U1002;
 
 public class U1002Test {
 
