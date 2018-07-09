@@ -8,7 +8,7 @@ public class PowerTest {
 
     @Test
     public void pow() {
-        var s = new Power();
+        Power s = new Power();
         System.out.println(s.pow(2.3, -4));
         System.out.println(Math.pow(2.3,-4));
     }

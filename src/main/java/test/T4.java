@@ -12,7 +12,8 @@ import java.lang.reflect.Method;
  */
 public class T4 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
-        Class clazz = Class.forName("test.T");
+//        Class clazz = Class.forName("test.T");
+        Class clazz = test.T.class;
         Object object = clazz.newInstance();
         Method method = clazz.getMethod("hello");
         method.invoke(object);
