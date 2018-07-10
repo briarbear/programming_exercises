@@ -8,8 +8,8 @@ public class FindKthToTailTest {
 
     @Test
     public void find() {
-        var s = new FindKthToTail();
-        var root = new ListNode(0);
+        FindKthToTail s = new FindKthToTail();
+        ListNode root = new ListNode(0);
         root.next = new ListNode(1);
         root.next.next = new ListNode(2);
         root.next.next.next = new ListNode(3);

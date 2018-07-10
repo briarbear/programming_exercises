@@ -10,8 +10,8 @@ public class HasSubtreeTest {
 
     @Test
     public void hasSubtree() {
-        var s = new HasSubtree();
-        var root1 = new TreeNode(8);
+        HasSubtree s = new HasSubtree();
+        TreeNode root1 = new TreeNode(8);
         root1.left = new TreeNode(8);
         root1.right = new TreeNode(7);
         root1.left.left = new TreeNode(9);
@@ -19,7 +19,7 @@ public class HasSubtreeTest {
         root1.left.right.left = new TreeNode(4);
         root1.left.right.right = new TreeNode(7);
 
-        var root2 = new TreeNode(8);
+        TreeNode root2 = new TreeNode(8);
         root2.left = new TreeNode(9);
         root2.right = new TreeNode(2);
 

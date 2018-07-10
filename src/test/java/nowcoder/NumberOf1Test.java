@@ -9,7 +9,7 @@ public class NumberOf1Test {
 
     @Test
     public void number() {
-        var s = new NumberOf1();
+        NumberOf1 s = new NumberOf1();
         System.out.println(s.number(0));
     }
 }
