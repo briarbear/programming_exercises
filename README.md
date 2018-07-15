@@ -40,4 +40,9 @@
  - 二叉搜索树与双向链表[Convert](src/main/java/nowcoder/Convert.java)
  - 字符串的排列[Permutation](src/main/java/nowcoder/Permutation.java)
  - 字符串组合[Combination](src/main/java/nowcoder/Combination.java)
+ - 最长重复子串[LongestRepeatingSubstring](src/main/java/nowcoder/LongestRepeatingSubstring.java)
  
+ 
+ ---
+ ## leetcode试题目录
+ - s
