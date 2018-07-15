@@ -23,7 +23,7 @@ public class CloneListTest {
 
         CloneList s = new CloneList();
         RandomListNode res = s.copy(root);
-//        RandomListNode res = s.copy(null);
+//        RandomListNode set = s.copy(null);
 
         return;
     }
