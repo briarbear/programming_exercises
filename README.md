@@ -11,8 +11,8 @@
   - [github](https://github.com/briarbear/programming_exercises)
   - [gitee](https://gitee.com/briarbear/programming_exercises)
  
- ##排序算法总结
- - [目录](src/main/java/Algorithm/Sorts)
+ ## 排序算法总结
+ - [常见排序算法](src/main/java/Algorithm/Sorts)
  
  ## 面试编程题...
  - [目录](src/main/java/company)
