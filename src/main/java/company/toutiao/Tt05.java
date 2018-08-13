@@ -39,9 +39,7 @@ public class Tt05 {
             }));
             
             int j = 0,k = 0;
-            for (int i = 0; i < ; i++) {
-                
-            }
+
         }
     }
 }
