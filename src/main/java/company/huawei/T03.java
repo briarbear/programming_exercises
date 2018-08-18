@@ -1,6 +1,9 @@
 package company.huawei;
 
+import java.util.List;
 import java.util.Scanner;
+import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 第三题
@@ -25,67 +28,50 @@ public class T03 {
 
     private static int helper(String input) {
 
-        char c = input.charAt(i++);
-        if(c == ')')
+        if (i >= length) return -1;
+        if (input.charAt(i++) != '(') return -1;
+        char op = input.charAt(i++);
+        if (input.charAt(i) != ' ') return -1;
+        i++;
+        int res;
+
+        if (op == '+' || op == '*'){
+            int val1 = handler(input);  //计算第一个数
+            if (i >= length || val1 == -1 || input.charAt(i) != ' ') return -1;
+            i++;
+            int val2 = handler(input);  //计算第二个数
+            if (val2 == -1) return -1;
+            if (i >= length || input.charAt(i) != ')') return -1;
+            i++;
+            if (op == '+') return val1 + val2;
+            else return val1 * val2;
+        }else if (op=='^'){
+            int val = handler(input);  //只有一个数
+            if (val == -1 || i >= length || input.charAt(i) != ')') return -1;
+            i++;
+            return val+1;
+        }else
             return -1;
 
-        if (c == '('){
-            char op = input.charAt(i++);
-            int flag = 0;
-            switch (op){
-                case '+':flag = 1;break;
-                case '*':flag = 2;break;
-                case '^':flag = 3;break;
-                case '(':break;
-                default:break;
-            }
-
-
-
-
-
-            char blank = input.charAt(i++);
-            if (blank != ' ')
-                return -1;
-            char left = input.charAt(i++);
-            int le;
-            int ri = 0;
-            switch (left){
-                case '(':i--;le = helper(input);break;
-                case ')':return -1;
-                default:le = left - '0';break;
-            }
-
-            blank = input.charAt(i++);
-
-            if (flag == 3){
-                switch (blank){
-                    case ')':return le+1;
-                }
-            }
-
-            switch (blank){
-                case ' ':break;
-                case '(':i--;ri = helper(input);break;
-            }
-
-
-
-            char end = input.charAt(i++);
-            if (end != ')')
-                return -1;
-            switch (flag){
-                case 1:return le + ri;
-                case 2:return le * ri;
-                case 3:return le+1;
-            }
-        }
-
-
-        return -1;
     }
 
-    private static int handler(){
+    /**
+     * 计算一个操作数的结果
+     * @param input
+     * @return
+     */
+    private static int handler(String input){
+        if (input.charAt(i) == '(')
+            return helper(input);
+        else if (Character.isDigit(input.charAt(i))){
+            int temp = 0;
+            while (i < length && Character.isDigit(input.charAt(i))){
+                temp = temp * 10 +input.charAt(i++) -'0';
+                if (temp > Integer.MAX_VALUE)return -1;
+            }
+            return temp;
+        }
+
         return 0;
     }
 
