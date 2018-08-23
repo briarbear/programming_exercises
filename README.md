@@ -50,6 +50,7 @@
  - 数组中出现次数超过一半的数字[MoreThanHalfNum](/src/main/java/nowcoder/offer/MoreThanHalfNum.java)
  - 最小的K个数[GetLeastNumbers](/src/main/java/nowcoder/offer/GetLeastNumbers.java)
  - 连续子数组的最大和[FindGreatestSumOfSubArray](/src/main/java/nowcoder/offer/FindGreatestSumOfSubArray.java)
+ - 整数中1出现的次数[NumberOf1]((/src/main/java/nowcoder/offer/NumberOf1.java))
  ---
  ## leetcode试题目录
  - 94:二叉树的中序遍历[inorderTraversal](/src/main/java/leetcode/ch9/S94.java)
