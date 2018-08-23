@@ -47,8 +47,9 @@
  - 字符串的排列[Permutation](src/main/java/nowcoder/offer/Permutation.java)
  - 字符串组合[Combination](src/main/java/nowcoder/offer/Combination.java)
  - 最长重复子串[LongestRepeatingSubstring](src/main/java/nowcoder/offer/LongestRepeatingSubstring.java)
- - 数组中出现次数超过一半的数字[MoreThanHalfNum](/src/main/java/nowcoder/offer)
- - 最小的K个数[]()
+ - 数组中出现次数超过一半的数字[MoreThanHalfNum](/src/main/java/nowcoder/offer/MoreThanHalfNum.java)
+ - 最小的K个数[GetLeastNumbers](/src/main/java/nowcoder/offer/GetLeastNumbers.java)
+ - 连续子数组的最大和[FindGreatestSumOfSubArray](/src/main/java/nowcoder/offer/FindGreatestSumOfSubArray.java)
  ---
  ## leetcode试题目录
  - 94:二叉树的中序遍历[inorderTraversal](/src/main/java/leetcode/ch9/S94.java)
