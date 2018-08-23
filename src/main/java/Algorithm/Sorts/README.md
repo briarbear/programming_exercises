@@ -20,7 +20,7 @@
 **空间复杂度**：运行完一个程序所需内存的大小。
 
 ### 1.3 算法总结
-![](http://p7dzmubvx.bkt.clouddn.com/201805221642_154.png)
+![](http://p7dzmubvx.bkt.clouddn.com/%E6%8E%92%E5%BA%8F%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%B1%87%E6%80%BB.png)
 - 图片中名词解释
  - n: 数据规模
  - k: “桶”的个数
