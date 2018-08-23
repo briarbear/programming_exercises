@@ -40,7 +40,9 @@ public class PreOrder {
         return res;
     }
 
-
+    /**
+     * 模版代码
+     */
     public List<Integer> order2(TreeNode root){
         Stack<TreeNode> stack = new Stack<>();
         TreeNode node = null;
@@ -58,5 +60,20 @@ public class PreOrder {
         }
 
         return res;
+    }
+
+    /**
+     * 递归实现
+     */
+    private ArrayList<Integer> ans = new ArrayList<>();
+    public List<Integer> order3(TreeNode node){
+        if (node == null)
+            return ans;
+        else
+            ans.add(node.val);
+        order3(node.left);
+        order3(node.right);
+
+        return ans;
     }
 }
