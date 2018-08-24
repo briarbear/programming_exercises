@@ -33,19 +33,17 @@ public class NumberOf1 {
      * @return
      */
     public int solution(int n){
-        char[] chars = String.valueOf(n).toCharArray();
-        int len = chars.length; //该数字的长度
-        int[] num = new int[len];
-        for (int i = 0; i < len; i++) {
-            num[i] = chars[len-i-1] - '0';  //倒置存储
+
+        int res = 0,a = 1,b = 1;
+        while (n > 0){
+
+            res += (n + 8) / 10 * a;
+            if ( n % 10 == 1) res += b;
+            b += n % 10 * a;
+            a *= 10;
+            n /= 10;
         }
-        int count = 1,temp = 1;
-        for (int i = 0; i < len; i++) {
-            int t = 1;
-            if (num[i] > 1) ;
-        }
 
-
-
+        return res;
     }
 }
