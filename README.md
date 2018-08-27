@@ -51,6 +51,13 @@
  - 最小的K个数[GetLeastNumbers](/src/main/java/nowcoder/offer/GetLeastNumbers.java)
  - 连续子数组的最大和[FindGreatestSumOfSubArray](/src/main/java/nowcoder/offer/FindGreatestSumOfSubArray.java)
  - 整数中1出现的次数[NumberOf1]((/src/main/java/nowcoder/offer/NumberOf1.java))
+ - 把数组排成最小的树[PrintMinNumber](/src/main/java/nowcoder/offer/PrintMinNumber.java)
+ - 丑数[GetUglyNumber](/src/main/java/nowcoder/offer/GetUglyNumber.java)
+ - 第一次只出现一次的字符[FirstNotRepeatingChar](/src/main/java/nowcoder/offer/FirstNotRepeatingChar.java)
+ - 数组中的逆序对[InversePairs](/src/main/java/nowcoder/offer/InversePairs.java)
+ - 两个链表中公共结点的个数[FindFirstCommonNode](/src/main/java/nowcoder/offer/FindFirstCommonNode.java)
+ - 数字在排序数组中出现的次数[GetNumberOfK](/src/main/java/nowcoder/offer/GetNumberOfK.java)
+ 
  ---
  ## leetcode试题目录
  - 94:二叉树的中序遍历[inorderTraversal](/src/main/java/leetcode/ch9/S94.java)
